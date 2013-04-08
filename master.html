@@ -1,0 +1,8 @@
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io.connect('/')
+    function play(){
+        socket.emit('masterPlay', 'asdf')
+    }
+</script>
+<button onclick="play()">Click me</button>
